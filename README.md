@@ -1,137 +1,60 @@
-# Mockbin [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
+Request Logger is a [Mockbin](http://mockbin.org/) clone
 
-[![Build Status][travis-image]][travis-url]
-[![Downloads][npm-downloads]][npm-url]
-[![Code Climate][codeclimate-quality]][codeclimate-url]
-[![Coverage Status][codeclimate-coverage]][codeclimate-url]
-[![Dependencies][david-image]][david-url]
-[![Gitter][gitter-image]][gitter-url]
+Request Logger
+=======
 
-Mockbin is used internally and maintained by [Mashape](https://github.com/Mashape), who also maintain the open-source API Gateway [Kong](https://github.com/Mashape/kong). 
+Request Logger allows you to generate [custom endpoints](/bin/create) to test, mock, and track HTTP requests & responses between libraries, sockets and APIs.
+
+#### [View Sample Bin](/bin/bbe7f656-12d6-4877-9fa8-5cd61f9522a9/view)
+#### [Create Bin](/bin/create)
+#### [Send a Request](#example)
+
+* * *
+
+Feature Highlights
+------------------
 
 
-## Table of contents
-- [Features](#features) 
-- [Installation](#installation) 
-- [Usage](#usage) 
-- [Documentation](#documentation) 
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Contributing](#contributing)
-- [License](#license)
+#### Mock Custom Endpoints
 
-## Features
+Mock custom endpoints using any [HTTP Archive (HAR)](https://ahmadnassri.github.io/har-resources/) response object _(can be used as webhooks, api mocks, or anything you want!)_
 
-- uses HAR format
-- supports JSON, YAML, XML, HTML output
-- plays nice with proxies (uses the X-Forwarded-* headers for IP resolution)
-- allows for HTTP Method Override using the header `X-HTTP-Method-Override` or through query string parameter: `_method`
-- create custom bins for experimenting log collection
+[Learn More](/docs)
 
-## Installation
+#### JSON, XML, YAML, HTML
 
-install from source or through [npm](https://www.npmjs.com/):
+Don't like JSON? No problem! Mockbin supports output in JSON, YAML and XML, as well as an HTML view for in-browser testing
 
-```shell
-npm install mockbin
-```
+[Learn More](/docs#content-negotiation)
 
-### Heroku
+#### Log and Inspect Calls
 
-[![Deploy][docker-image]][docker-url]
+Log and inspect incoming calls to your custom endpoints _(get detailed view to how clients are calling your api/webhook)_
 
-*read more on [Installation](docs/install.md)*.
+[Learn More](/docs)
 
-### Docker
 
-[![Docker][docker-logo]](docs/install.md#install-with-docker)
+#### Custom HTTP Method
 
-*read more on [Installation](docs/install.md#install-with-docker)*.
+No longer are you limited to `GET` & `POST`, Mockbin accepts all standard Methods and allows method overriding
 
-### Requirements
+[Learn More](/docs#http-methods)
 
-other than the dependencies listed in [package.json](package.json) The following are required:
+#### CORS Headers
 
-- [Redis](http://redis.io/)
+Debug your front-end JavaScript HTTP calls from any domain, Mockbin will dynamically generate Cross-Origin resource sharing headers
 
-### Configuration
+[Learn More](/docs)
 
-you will need to tell *mockbin* where Redis is:
 
-```shell
-npm config set mockbin:redis redis://127.0.0.1:6379
-```
+#### HTTP Archive (HAR)
 
-By Default the server will run on port `8080`, you can customize the port like so: 
+Mockbin relies on the popular [HTTP Archive (HAR)](https://ahmadnassri.github.io/har-resources/) format to create mock endpoints (Bins), import data and describe HTTP call logs.
 
-```shell
-npm config set mockbin:port 8001
-```
+[Learn More](/docs)
 
-*read more on [Configuration](docs/config.md)*.
-
-### Running
-
-After installing the `npm` package you can now start the server like so:
-
-```shell
-npm start
-```
-
-## Usage
-
-```shell
-  Usage: mockbin [options]
-
-  Options:
-
-    -h, --help         output usage information
-    -V, --version      output the version number
-    -p, --port <port>  Port that the HTTP server will run on
-    -r, --redis [dsn]  Redis dsn
-    -q, --quiet        Disable console logging
-
-```
-
-## Documentation
-
-Read the full API documentation, please review the [API Docs](https://github.com/Mashape/mockbin/tree/master/docs).
-
-## Bugs and feature requests
-
-Have a bug or a feature request? Please first read the [issue guidelines](CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](/issues).
-
-## Contributing
-
-Please read through our [contributing guidelines](CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
-
-More over, if your pull request contains JavaScript patches or features, you must include relevant unit tests.
-
-Editor preferences are available in the [editor config](.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+* * *
 
 ## License
 
 [MIT](LICENSE) &copy; [Mashape](https://www.mashape.com)
-
-[license-url]: https://github.com/Mashape/mockbin/blob/master/LICENSE
-
-[travis-url]: https://travis-ci.org/Mashape/mockbin
-[travis-image]: https://img.shields.io/travis/Mashape/mockbin.svg?style=flat-square
-
-[npm-url]: https://www.npmjs.com/package/mockbin
-[npm-license]: https://img.shields.io/npm/l/mockbin.svg?style=flat-square
-[npm-version]: https://img.shields.io/npm/v/mockbin.svg?style=flat-square
-[npm-downloads]: https://img.shields.io/npm/dm/mockbin.svg?style=flat-square
-
-[codeclimate-url]: https://codeclimate.com/github/Mashape/mockbin
-[codeclimate-quality]: https://img.shields.io/codeclimate/github/Mashape/mockbin.svg?style=flat-square
-[codeclimate-coverage]: https://img.shields.io/codeclimate/coverage/github/Mashape/mockbin.svg?style=flat-square
-
-[david-url]: https://david-dm.org/Mashape/mockbin
-[david-image]: https://img.shields.io/david/Mashape/mockbin.svg?style=flat-square
-
-[docker-image]: https://www.herokucdn.com/deploy/button.svg
-[docker-url]: https://heroku.com/deploy?template=https://github.com/rdenhaanalonso/heroku-mockbin
-[docker-logo]: https://d3oypxn00j2a10.cloudfront.net/0.16.0/images/pages/brand_guidelines/small_h.png
-
-[gitter-url]: https://gitter.im/Mashape/mockbin
-[gitter-image]: https://img.shields.io/badge/Gitter-Join%20Chat-blue.svg?style=flat-square
