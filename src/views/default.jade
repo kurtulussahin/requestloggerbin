@@ -1,0 +1,45 @@
+extends layout.jade
+
+block content
+  div.container
+    if (!data)
+      div.alert.alert-warning No data
+
+    else
+      div#preview
+        header
+          ul.nav.nav-tabs
+            for key in ['json', 'yaml', 'xml']
+              li: a(href='##{key}', data-toggle='tab')= key.toUpperCase()
+
+        div.tab-content
+          for key in ['json', 'yaml', 'xml']
+            div(id= key).tab-pane.active.fade.in
+              button(data-clipboard-target='#{key}-code').btn.btn-default.btn-xs.btn-clipboard #[i.fa.fa-copy] #[span Copy to Clipboard]
+              pre: code(id='#{key}-code')= data[key]
+
+    br
+
+    p: em You're viewing the HTML output, try calling this endpoint with an #[code Accept] header with one of the values: #[code application/x-yaml], #[code application/json], #[code application/xml]
+
+block scripts
+  script(type='text/javascript').
+    $(function() {
+      // configure Zero Clipboard
+      ZeroClipboard.config({
+        swfPath: '//cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.2.0/ZeroClipboard.swf',
+        forceHandCursor: true,
+        trustedDomains: [window.location.host, "cdnjs.cloudflare.com"]
+      })
+
+      // attach Zero Clipboard
+      new ZeroClipboard($('.btn-clipboard'))
+
+      // select first tab
+      $('.nav-tabs a:first').tab('show');
+
+      // highlight the code
+      $('.tab-content pre code').each(function (i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
