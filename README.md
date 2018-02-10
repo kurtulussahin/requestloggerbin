@@ -5,7 +5,7 @@ Request Logger
 
 Request Logger allows you to generate [custom endpoints](/bin/create) to test, mock, and track HTTP requests & responses between libraries, sockets and APIs.
 
- # | [View Sample Bin](/bin/2ad559a3-cd61-455c-acea-d6c24ae2142f/view) 	|---|   [Create Bin](/bin/create)	|
+ # | [View Sample Bin](/bin/e7839008-6681-40cf-9965-4df2fe8861c5/view) 	|---|   [Create Bin](/bin/create)	|
 
 
 * * *
