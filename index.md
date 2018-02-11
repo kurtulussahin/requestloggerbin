@@ -7,21 +7,18 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Source+Code+Pro:200,300,400,500,600,700,900" media="all">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" media="all">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css" media="all">
-        <link rel="stylesheet" type="text/css" href="/src/static/main.css" media="all">
+        <link rel="stylesheet" type="text/css" href="/static/main.css" media="all">
         
         <style></style>
         
        
-         <link rel="stylesheet" type="text/css" href="/src/static/style.css" media="all">
+         <link rel="stylesheet" type="text/css" href="/static/style.css" media="all">
          </head>
     <body>
         <header>
             <nav class="navbar navbar-default">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                        <div class="navbar-brand logo"><span><a href="/"><span class="logo fa fa-terminal"></span> request logger bin</a> <span class="text-muted">is a Mashape Mockbin Clone </span></span></div>
-                    </div>
+                    
                     <div id="navbar" class="collapse navbar-collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="/bin/create">Create Bin</a></li>
