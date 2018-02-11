@@ -19,12 +19,7 @@
             <nav class="navbar navbar-default">
                 <div class="container">
                     
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="/bin/create">Create Bin</a></li>
-                            <li><a href="https://github.com/kurtulussahin/requestlogger">Github</a></li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </nav>
         </header>
@@ -36,7 +31,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="btn-toolbar"><a href="/bin/e7839008-6681-40cf-9965-4df2fe8861c5/view" class="btn btn-primary">View Sample Bin</a><a href="/bin/create" class="btn btn-success">Create Bin</a><a href="#example" class="btn btn-primary hidden-xs">Send a Request</a></div>
+                <div class="btn-toolbar"><a href="/bin/e7839008-6681-40cf-9965-4df2fe8861c5/view" class="btn btn-primary">View Sample Bin</a><a href="/bin/create" class="btn btn-success">Create Bin</a></div>
        
     </body>
 </html>
