@@ -15,14 +15,6 @@
          <link rel="stylesheet" type="text/css" href="/static/style.css" media="all">
          </head>
     <body>
-        <header>
-            <nav class="navbar navbar-default">
-                <div class="container">
-                    
-                    
-                </div>
-            </nav>
-        </header>
         <div class="home">
             <div class="showcase">
                 <div class="container">
