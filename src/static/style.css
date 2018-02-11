@@ -1,0 +1,303 @@
+* {
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+body {
+  color: #36434C;
+  padding: 0;
+  padding-bottom: 70px;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.navbar-default {
+  border-radius: 0;
+}
+
+header .navbar-default {
+  border-color: #E4EBF0;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+header .navbar-default .navbar-brand {
+  position: relative;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+header .navbar-default .navbar-brand > a {
+  color: #273D4C;
+}
+
+header .navbar-default .navbar-brand .logo {
+  padding: 4px;
+  color: #FFFFFF;
+  background-color: #2BA8D2;
+}
+
+header .navbar-default .navbar-brand a:hover {
+  text-decoration: none;
+}
+
+header .navbar-default .navbar-brand .text-muted,
+header .navbar-default .navbar-brand .text-muted a {
+  font-weight: 400;
+  color: #A1ABB2;
+}
+
+header .navbar-default .navbar-nav > li > a {
+  color: #2E99E6;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  border-radius: 3px;
+
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+header .navbar-default .navbar-nav > .active > a,
+header .navbar-default .navbar-nav > .active > a:focus,
+header .navbar-default .navbar-nav > .active > a:hover {
+  color: #36434C;
+  background-color: #EFF7FD;
+  text-decoration: none;
+}
+
+header .navbar-default .navbar-nav > li > a:hover {
+  color: #2477B2;
+  text-decoration: underline;
+}
+
+header .navbar-default .navbar-text {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+.showcase {
+  text-align: center;
+
+  margin-top: -20px;
+  margin-bottom: 20px;
+
+  padding: 40px 0;
+
+  font-size: 20px;
+
+  color: #FFFFFF;
+
+  background: #0A3D79;
+  background: -moz-linear-gradient(45deg, #0A3D79 0%, #0C60A0 100%);
+  background: -webkit-linear-gradient(45deg, #0A3D79 0%, #0C60A0 100%);
+  background: -o-linear-gradient(45deg, #0A3D79 0%, #0C60A0 100%);
+  background: -ms-linear-gradient(45deg, #0A3D79 0%, #0C60A0 100%);
+  background: linear-gradient(135deg, #0A3D79 0%, #0C60A0 100%);
+}
+
+.showcase h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.showcase .description {
+  font-size: 15px;
+  margin: 30px 0 60px 0;
+}
+
+.showcase p a {
+  color: white;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.showcase p a:hover {
+  text-decoration: none;
+}
+
+.btn-primary {
+  color: #FFFFFF;
+  border-color: #0089EB;
+
+  background-color: #37A0E8;
+
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+  color: #FFFFFF;
+  border-color: #0089EB;
+  background-color: #2890E3;
+}
+
+.home .btn-toolbar {
+  margin: 60px 0 60px 0;
+  text-align: center;
+}
+
+.home .btn-toolbar .btn {
+  font-size: 15px;
+  font-weight: 700;
+
+  padding: 15px 20px;
+}
+
+.home h2 {
+  color: #015699;
+  font-weight: 300;
+  margin: 70px 0;
+}
+
+.home h3 {
+  color: #434F59;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.home hr {
+  border-top: 1px solid #E4EBF0;
+  margin: 0;
+}
+
+.home .media {
+  margin-top: 60px;
+}
+
+.home .media h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #303940;
+}
+
+.home .media .media-object {
+  margin-right: 40px;
+}
+
+.home .media p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #435059;
+}
+
+.home .media .fa {
+  font-weight: 600;
+}
+
+
+.docs h1 {
+  display: block;
+  padding: 25px 0;
+}
+
+.docs code {
+  border-radius: 0;
+  color: #36434C;
+  border: 1px solid #f0f1f2;
+  background-color: #fcfcfc;
+}
+
+.docs .markdown h2 {
+  margin: 30px 0;
+}
+
+.docs .markdown h3 {
+  margin: 40px 0;
+}
+
+.docs .markdown h4 {
+  font-size: 20px;
+  margin: 30px 0;
+  font-weight: 600;
+}
+
+.docs .markdown h3:target,
+.docs .markdown h4:target {
+  padding-top: 70px;
+}
+
+.docs .markdown h4 + blockquote {
+  margin-bottom: 30px;
+}
+
+.docs .markdown h4 + blockquote code {
+  display: inline;
+}
+
+.docs .markdown h5 code {
+  display: inline-block;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.docs .markdown h6 {
+  margin: 0 25px -25px 0;
+  text-align: right;
+
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.docs .markdown p + h6 {
+  margin-top: 20px;
+}
+
+.docs .markdown blockquote pre {
+  border-radius: 0;
+  max-height: 300px;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.docs .markdown blockquote pre code {
+  padding: 0;
+}
+
+.docs .markdown h6 + blockquote pre {
+  background-color: #FFFFFF;
+}
+
+.docs .markdown h6 + blockquote + h6 + blockquote pre {
+  background-color: #f7f7f9;
+}
+
+.docs .markdown hr {
+  border-top-width: 2px;
+}
+
+.docs .markdown pre {
+  border-radius: 3px;
+  border-color: #f0f1f2;
+  background-color: #fcfcfc;
+}
+
+.docs .markdown pre code {
+  border: none;
+  background-color: transparent;
+}
+
+.docs .markdown blockquote {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+.docs .affix {
+  top: 0;
+  width: 100%;
+}
+
+.docs .dropdown-menu.utility {
+  max-height: 500px;
+  overflow-y: scroll;
+}
