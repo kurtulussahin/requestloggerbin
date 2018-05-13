@@ -35,7 +35,7 @@ html
 
           div#navbar.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
-              for link, name in [{name: 'Create Bin', href: '/bin/create'}, {name: 'Github', href: 'https://github.com/kurtulussahin/requestlogger'}]
+              for link, name in [{name: 'Create Bin', href: '/bin/create'}, {name: 'Github', href: 'https://github.com/kurtulussahin/requestloggerbin'}]
                 li(class={active: req.originalUrl === link.href}): a(href= link.href)= link.name
 
     block content
