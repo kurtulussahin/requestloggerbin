@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="container">
-                <div class="btn-toolbar"><a href="/bin/e7839008-6681-40cf-9965-4df2fe8861c5/view" class="btn btn-primary">View Sample Bin</a><a href="/bin/create" class="btn btn-success">Create Bin</a></div>
+                <div class="btn-toolbar"><a href="/bin/create" class="btn btn-success">Create Bin</a></div>
        
     </body>
 </html>
